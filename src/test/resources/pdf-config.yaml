@@ -1,0 +1,62 @@
+passColor: 3fc07e
+failColor: de215b
+skipColor: 219cde
+displayFeature: true
+displayScenario: true
+displayDetailed: true
+
+summaryConfig:
+   title: FTE Nomination Test Execution Report 
+   dataBackgroundColor: fffcf9
+   titleColor: 110000
+   dateColor: 656565
+   #startTimeColor: 000000
+   #endTimeColor: 000000
+   #durationColor: 000000
+   dial:
+      featureRanges: 60 95
+      scenarioRanges: 70 90
+      stepRanges: 75 85
+      badColor: b00000
+      averageColor: 047701
+      goodColor: 4b5bb4
+   
+featureConfig:
+   #itemcount: 10
+   totalColor: FF0000
+   durationColor: FF0000
+   
+scenarioConfig:
+   #itemcount: 12
+   totalColor: FF0000
+   durationColor: FF0000
+   
+detailedFeatureConfig:
+   featureNameColor: FF0000
+   startEndTimeColor: 000000
+   tagColor: 404040
+   dataHeaderColor: FFFFFF
+   dataBackgroundColor: 404040
+   totalColor: 0000FF
+   durationColor: FFFFFF
+   durationBackgroundColor: 404040   
+   
+detailedScenarioConfig:
+   featureNameColor: C0C0C0
+   scenarioNameColor: FF0000
+   startEndTimeColor: 000000
+   tagColor: 404040
+   dataHeaderColor: FFFFFF
+   dataBackgroundColor: 404040
+   totalColor: 0000FF
+   durationColor: FFFFFF
+   durationBackgroundColor: 404040
+   stepChartBarColor: 7f32a8
+   
+detailedStepHookConfig:
+   stepTextColor: 0000FF
+   hookTextColor: 00FF00
+   durationColor: FF0000
+   errorMsgColor: 000000
+   logMsgColor: 000000
+   #mediaMsgColor: FF0000
