@@ -102,4 +102,9 @@ public class BaseUntil {
 		Select s = new Select(e);
 		s.selectByVisibleText(value);
 	}
+	
+	public static void selectVisible_Text(WebElement e, int value) {
+		Select s = new Select(e);
+		s.selectByIndex(value);
+	}
 }
