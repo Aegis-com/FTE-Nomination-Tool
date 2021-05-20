@@ -4,13 +4,15 @@ import org.openqa.selenium.support.PageFactory;
 import fte.utility.ConfigReader;
 import java.util.Properties;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPageObjects {
-	
+
 	private WebDriver driver;
 	private ConfigReader configReader;
 	Properties prop;
+	static boolean Selected;
 
 	// Locators of Login page:
 	private By profileButton = By.xpath("//a[@class='profile-menu-button ng-star-inserted']");
@@ -18,29 +20,29 @@ public class LoginPageObjects {
 	private By emailId = By.xpath("//input[@type='email']");
 	private By next = By.xpath("//input[@type='submit']");
 	private By usePassLink = By.xpath("//a[text()='Use your password instead']");
-	private By authentication = By.id("FormsAuthentication");
+	private By passwordBtn = By.id("FormsAuthentication");
 	private By password = By.id("passwordInput");
 	private By signIn = By.id("submitButton");
 	private By token = By.xpath("//span[text()='Sign in with your phone or token device']");
 	private By textOfLandingPage = By.xpath("//div[text()='Microsoft Cloud Accelerator Program']");
-	
-	// Constructor of the page and Pagefactory	
+
+	// Constructor of the page and Pagefactory
 	public LoginPageObjects(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	// page actions: features(behavior) of the page the form of methods:
-	
+
 	public void getProperty() {
 		configReader = new ConfigReader();
 		prop = configReader.init_prop();
 	}
-	
+
 	public void launchURL() {
+		getProperty();
 		String URL = prop.getProperty("url");
 		driver.get(URL);
-		
 
 	}
 
@@ -53,24 +55,32 @@ public class LoginPageObjects {
 		driver.findElement(rippleLink).click();
 	}
 
-	public void enterUserName() {
+	public void enterUserName() throws InterruptedException {
+		getProperty();
 		String username = prop.getProperty("emailId");
 		driver.findElement(emailId).sendKeys(username);
 		driver.findElement(next).click();
 	}
 
-	public void clicksTheAuthenButton() {
-
-		if (driver.findElement(usePassLink).isDisplayed()) {
+	public void usePasswordInstead() {
+		try {
+			driver.findElement(usePassLink);
+			Selected = true;
+		} catch (NoSuchElementException e) {
+			Selected = false;
+		}
+		if (Selected == true) {
 			driver.findElement(usePassLink).click();
+			driver.findElement(passwordBtn).click();
 		} else {
-			driver.findElement(authentication).click();
+			driver.findElement(passwordBtn).click();
 		}
 	}
 
 	public void enterPassword() {
+		getProperty();
 		String pwd = prop.getProperty("password");
-		driver.findElement(authentication).click();
+		usePasswordInstead();
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(signIn).click();
 	}

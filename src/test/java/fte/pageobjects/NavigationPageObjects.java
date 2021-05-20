@@ -8,11 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NavigationPageObjects {
 	private WebDriver driver;
+
 	// Constructor of the page and Pagefactory
 	public NavigationPageObjects(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	// Locators of Navigation:
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Microsoft Cloud Accelerator Program')]")
 	private WebElement MSCloudAcceleratorProgramLink;
