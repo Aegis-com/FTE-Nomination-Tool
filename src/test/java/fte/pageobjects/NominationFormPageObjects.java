@@ -148,7 +148,7 @@ public class NominationFormPageObjects {
 		driver.findElement(checkb).click();
 		driver.findElement(newNominationForm).click();
 
-		// driver.findElement(submitNomination).click();
+	// driver.findElement(submitNomination).click();
 
 	}
 

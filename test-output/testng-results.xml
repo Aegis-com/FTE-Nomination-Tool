@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="121920" started-at="2021-05-21T06:43:43Z" finished-at="2021-05-21T06:45:45Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="121920" started-at="2021-05-21T06:43:43Z" finished-at="2021-05-21T06:45:45Z">
+      <class name="fte.testrunner.ParallelRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="setUpClass" is-config="true" duration-ms="1250" started-at="2021-05-21T12:13:43Z" finished-at="2021-05-21T12:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" duration-ms="65888" started-at="2021-05-21T12:13:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-21T12:14:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with Valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at parallel.LoginTestcase.page_text_should_be_titled_as(LoginTestcase.java:62)
+	at ✽.page text should be titled as "Microsoft Cloud Accelerator Program"(file:///C:/Users/91729/OneDrive/Documents/Aegis%20Projects%20Automation/FTE_Nomination_tool_Automation/src/test/resources/parallel/LoginPage.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" duration-ms="115903" started-at="2021-05-21T12:13:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-21T12:15:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate through all pages feature"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Navigate through pages feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" duration-ms="107513" started-at="2021-05-21T12:13:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-21T12:15:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Partner Nominating Customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Nominate customer]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="tearDownClass" is-config="true" duration-ms="4727" started-at="2021-05-21T12:15:40Z" finished-at="2021-05-21T12:15:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- fte.testrunner.ParallelRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
