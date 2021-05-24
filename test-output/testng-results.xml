@@ -2,63 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="121920" started-at="2021-05-21T06:43:43Z" finished-at="2021-05-21T06:45:45Z">
+  <suite name="Default suite" duration-ms="96748" started-at="2021-05-24T10:26:53Z" finished-at="2021-05-24T10:28:30Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@16ec5519]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="121920" started-at="2021-05-21T06:43:43Z" finished-at="2021-05-21T06:45:45Z">
+    <test name="Default test" duration-ms="96748" started-at="2021-05-24T10:26:53Z" finished-at="2021-05-24T10:28:30Z">
       <class name="fte.testrunner.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="setUpClass" is-config="true" duration-ms="1250" started-at="2021-05-21T12:13:43Z" finished-at="2021-05-21T12:13:44Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:fte.testrunner.ParallelRun@16ec5519]" name="setUpClass" is-config="true" duration-ms="1596" started-at="2021-05-24T15:56:53Z" finished-at="2021-05-24T15:56:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" duration-ms="65888" started-at="2021-05-21T12:13:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-21T12:14:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with Valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login page feature]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at org.junit.Assert.assertFalse(Assert.java:75)
-	at parallel.LoginTestcase.page_text_should_be_titled_as(LoginTestcase.java:62)
-	at ✽.page text should be titled as "Microsoft Cloud Accelerator Program"(file:///C:/Users/91729/OneDrive/Documents/Aegis%20Projects%20Automation/FTE_Nomination_tool_Automation/src/test/resources/parallel/LoginPage.feature:14)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" duration-ms="115903" started-at="2021-05-21T12:13:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-21T12:15:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Navigate through all pages feature"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Navigate through pages feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="runScenario" duration-ms="107513" started-at="2021-05-21T12:13:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-21T12:15:32Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@16ec5519]" name="runScenario" duration-ms="86891" started-at="2021-05-24T15:56:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-24T15:58:21Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +30,80 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:fte.testrunner.ParallelRun@5ae50ce6]" name="tearDownClass" is-config="true" duration-ms="4727" started-at="2021-05-21T12:15:40Z" finished-at="2021-05-21T12:15:45Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@16ec5519]" name="runScenario" duration-ms="88872" started-at="2021-05-24T15:56:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-24T15:58:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with Valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Microsoft Cloud Accelerator Program']"}
+  (Session info: MicrosoftEdge=90.0.818.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-7L3CT2G', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 90.0.818.66, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56985}, msedge: {msedgedriverVersion: 90.0.818.66 (5f913625aa6fc5..., userDataDir: C:\Users\91729\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0da5d1713b26339958f65b35e70d8510
+*** Element info: {Using=xpath, value=//div[text()='Microsoft Cloud Accelerator Program']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Microsoft Cloud Accelerator Program']"}
+  (Session info: MicrosoftEdge=90.0.818.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-7L3CT2G', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 90.0.818.66, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56985}, msedge: {msedgedriverVersion: 90.0.818.66 (5f913625aa6fc5..., userDataDir: C:\Users\91729\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0da5d1713b26339958f65b35e70d8510
+*** Element info: {Using=xpath, value=//div[text()='Microsoft Cloud Accelerator Program']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at fte.pageobjects.LoginPageObjects.getTextOfLandingPage(LoginPageObjects.java:93)
+	at parallel.LoginTestcase.user_gets_the_text_from_the_homepage(LoginTestcase.java:55)
+	at ✽.user gets the text from the Homepage(file:///C:/Users/91729/OneDrive/Documents/Aegis%20Projects%20Automation/FTE_Nomination_tool_Automation/src/test/resources/parallel/LoginPage.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fte.testrunner.ParallelRun@16ec5519]" name="runScenario" duration-ms="52053" started-at="2021-05-24T15:56:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-24T15:57:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate through all pages feature"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Navigate through pages feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:fte.testrunner.ParallelRun@16ec5519]" name="tearDownClass" is-config="true" duration-ms="6220" started-at="2021-05-24T15:58:23Z" finished-at="2021-05-24T15:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

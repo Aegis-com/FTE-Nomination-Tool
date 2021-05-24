@@ -1,36 +1,36 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "ca9385b5-14ef-4252-acbe-62b31bdb4dcd",
-    "feature": "Nominate customer",
-    "scenario": "Partner Nominating Customer",
-    "start": 1621579424892,
-    "group": 17,
-    "content": "",
-    "tags": "",
-    "end": 1621579532079,
-    "className": "passed"
-  },
-  {
-    "id": "e58f4450-72c7-48cc-9afb-e3b2ea597bae",
-    "feature": "Login page feature",
-    "scenario": "Login with Valid credentials",
-    "start": 1621579424970,
-    "group": 15,
-    "content": "",
-    "tags": "",
-    "end": 1621579490448,
-    "className": "failed"
-  },
-  {
-    "id": "56aa0158-aff4-463f-bbf9-891cfe118f28",
+    "id": "a10f5750-a22a-4e9a-8fa4-a3c7dc47905f",
     "feature": "Navigate through pages feature",
     "scenario": "Navigate through all pages feature",
-    "start": 1621579424893,
+    "start": 1621852015373,
     "group": 16,
     "content": "",
     "tags": "",
-    "end": 1621579540469,
+    "end": 1621852067041,
+    "className": "passed"
+  },
+  {
+    "id": "a68ae40d-65c4-4fb5-9d14-a57fdfc79cb9",
+    "feature": "Login page feature",
+    "scenario": "Login with Valid credentials",
+    "start": 1621852015493,
+    "group": 15,
+    "content": "",
+    "tags": "",
+    "end": 1621852103875,
+    "className": "failed"
+  },
+  {
+    "id": "67ad46e7-cbdd-4605-b408-e73f73f758fc",
+    "feature": "Nominate customer",
+    "scenario": "Partner Nominating Customer",
+    "start": 1621852015372,
+    "group": 17,
+    "content": "",
+    "tags": "",
+    "end": 1621852101893,
     "className": "passed"
   }
 ]);

@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -23,6 +24,7 @@ public class DriverFactory {
 	 * @param browser
 	 * @return this will return tldriver.
 	 */
+	@SuppressWarnings("deprecation")
 	public WebDriver init_driver(String browser) {
 
 		System.out.println("browser value is: " + browser);
@@ -37,7 +39,9 @@ public class DriverFactory {
 		}
 		else if (browser.equals("edge")) {
 				WebDriverManager.edgedriver().setup();
-				tlDriver.set(new EdgeDriver());
+				EdgeOptions options = new EdgeOptions();
+                options.addArguments("-inprivate");
+				tlDriver.set(new EdgeDriver(options));
 		} else if (browser.equals("safari")) {
 			tlDriver.set(new SafariDriver());
 		} else {

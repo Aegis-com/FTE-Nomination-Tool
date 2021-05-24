@@ -8,8 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		"timeline:test-output-thread/" }, 
 monochrome = true, 
-glue = {"parallel" }, 
-features = { "src/test/resources/parallel" }
+features = { "src/test/resources/parallel" },
+glue = {"parallel" }
+
 )
 
 public class ParallelRun extends AbstractTestNGCucumberTests {
@@ -17,5 +18,6 @@ public class ParallelRun extends AbstractTestNGCucumberTests {
 	@DataProvider(parallel = true)
 	public Object[][] scenarios() {
 		return super.scenarios();
+		
 	}
 }
