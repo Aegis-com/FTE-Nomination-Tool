@@ -5,7 +5,7 @@
     <classes>
       <class name="fte.testrunner.ParallelRun">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="0 2"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
