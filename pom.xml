@@ -16,6 +16,13 @@
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
 	</properties>
+	<repositories>
+		<repository>
+			<id>mulesoft-releases</id>
+			<name>MuleSoft Repository</name>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 
@@ -114,9 +121,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
-				<includes>
-					<include>**/ParallelRun.java</include> 
-					</includes> 
+					<includes>
+						<include>**/ParallelRun.java</include>
+					</includes>
 					<parallel>methods</parallel>
 					<useUnlimitedThreads>true</useUnlimitedThreads>
 				</configuration>
