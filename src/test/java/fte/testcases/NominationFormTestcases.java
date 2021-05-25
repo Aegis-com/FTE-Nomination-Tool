@@ -1,4 +1,4 @@
-package parallel;
+package fte.testcases;
 
 import fte.pageobjects.NominationFormPageObjects;
 import fte.utility.DriverFactory;

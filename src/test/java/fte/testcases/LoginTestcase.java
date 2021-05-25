@@ -1,4 +1,4 @@
-package parallel;
+package fte.testcases;
 
 import org.junit.Assert;
 import fte.pageobjects.LoginPageObjects;

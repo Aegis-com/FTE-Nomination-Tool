@@ -1,4 +1,4 @@
-package parallel;
+package fte.testcases;
 import fte.pageobjects.NavigationPageObjects;
 import fte.utility.DriverFactory;
 import io.cucumber.java.en.Then;
